@@ -12,7 +12,6 @@
     body {
         width: 100vw;
         height: 100vh;
-        border: 2px solid red;
         margin-right: 3rem;
         overflow: hidden;
     }
@@ -28,7 +27,7 @@
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
         letter-spacing: 0.7ch;
         margin-top: 7rem;
         margin-bottom: 3rem;
@@ -38,6 +37,11 @@
         background-color: transparent;
         border: none;
         margin-top: 4rem;
+        cursor: pointer;
+    }
+
+    .x-btn {
+        cursor: pointer;
     }
 
 
@@ -52,12 +56,17 @@
 
     .tasks-section {
         border: 1px solid black;
+        border-radius: 6px;
         padding: 2rem;
         row-gap: 1rem;
+        margin-top: -2.8rem;
+        overflow-y: hidden;
+        background-color: transparent;
     }
 
     .input-field {
         height: 2.5rem;
+        border: none;
     }
 
     .add-btn {
@@ -67,6 +76,11 @@
         border: none;
         height:3rem;
         width: 5rem;
+        cursor: pointer;
+    }
+
+    .add-btn:hover {
+        background-color: rgb(229, 89, 229);
     }
 
     .tasks {
@@ -85,20 +99,32 @@
     .input-li-el {
         list-style: none;
     }
+    .input-field {
+        word-wrap:break-word;
+    }
 
     .task {
         border: 1px solid blue;
     }
 
 
-.x-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
+    .x-btn {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
 
-}
+    }
+
+    .filter-by-status {
+        margin-top: 2rem;
+    }
+  
+    .drag-drop {
+        margin-top: 2rem;
+    }
 
     footer {
         height: 5%;
         margin-top: 2rem;
+        background-color: rgb(248, 224, 248);
     }
