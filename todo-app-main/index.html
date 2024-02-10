@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Todo app</title>
+  <title>Todo app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   
@@ -14,17 +14,21 @@
 <body>
   <header>
     <h1>TODO</h1>
-    <article><p>Create a new todo...</p></article>
+   <button class="moon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/></svg></button>
   </header>
 
   <main class="main-container">
-    <section>
+    <section Class="tasks-section">
       <ul class="tasks">
-        <li>Task 1</li> <button class="x-btn">X</button>
-        <li>Task 2</li> <button class="x-btn">X</button>
-        <li>Task 3</li><button class="x-btn">X</button>
-        <li>Task 4</li><button class="x-btn">X</button>
-        <li>Task 5</li><button class="x-btn">X</button>
+        <li class="task input-li-el"><input type="text" class="input-field"></li><button class="add-btn">add</button>
+
+        <li class="task">item 1</li> <button class="x-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg></button>
+
+        <li class="task">item 2</li> <button class="x-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg></button>
+
+        <li class="task">item 3</li><button class="x-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg></button>
+
+        <li class="task">item 4</li><button class="x-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg></button>
       </ul>
 
       <article>
@@ -33,14 +37,13 @@
       </article>
     </section>
 
-    <section>
+    <section class="filter-by-status">
         <h2>All</h2>
         <h2>Active</h2>
-        <h2>Active 
-          Completed</h2>
+        <h2>Completed</h2>
     </section>
 
-    <section>
+    <section class="drag-drop">
       <h2>Drag and drop to reorder list</h2>
     </section>
   </main>

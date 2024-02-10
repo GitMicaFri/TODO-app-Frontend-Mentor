@@ -13,7 +13,7 @@
         width: 100vw;
         height: 100vh;
         border: 2px solid red;
-        margin: 3rem;
+        margin-right: 3rem;
         overflow: hidden;
     }
 
@@ -21,11 +21,10 @@
         height: 30%;
         background-image: url(./images/bg-mobile-light.jpg);
         display: flex;
-        flex-direction: column;
         background-size: cover;
         color: white;
         align-items: center;
-        align-content: space-around;
+        justify-content: space-around;
     }
 
     h1 {
@@ -35,15 +34,39 @@
         margin-bottom: 3rem;
     }
 
+    .moon-btn {
+        background-color: transparent;
+        border: none;
+        margin-top: 4rem;
+    }
+
 
     .main-container {
         background-color: F9F9F9;
-        height: 45%;
-        
+
         display: flex;
         flex-direction: column;
         align-items: center;
         align-content: space-around;
+    }
+
+    .tasks-section {
+        border: 1px solid black;
+        padding: 2rem;
+        row-gap: 1rem;
+    }
+
+    .input-field {
+        height: 2.5rem;
+    }
+
+    .add-btn {
+        padding: 1rem;
+        background-color: rgb(215, 184, 239);
+        border-radius: 5px;
+        border: none;
+        height:3rem;
+        width: 5rem;
     }
 
     .tasks {
@@ -54,9 +77,17 @@
                               "task btn";
         gap: 2rem;
        margin-bottom: 3rem;
-       list-style: none;
+       list-style:circle;
        font-size: 1.5rem;
        letter-spacing: 0.4ch;
+    }
+
+    .input-li-el {
+        list-style: none;
+    }
+
+    .task {
+        border: 1px solid blue;
     }
 
 
