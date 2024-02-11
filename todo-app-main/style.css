@@ -89,7 +89,7 @@
         grid-template-areas: "task btn"
                               "task btn"
                               "task btn";
-        gap: 2rem;
+        gap: 1rem;
        margin-bottom: 3rem;
        list-style:circle;
        font-size: 1.5rem;
@@ -103,12 +103,19 @@
         word-wrap:break-word;
     }
 
+    .task-container {
+        display: block;
+    }
+
     .task {
+        display: inline-block;
         border: 1px solid blue;
+        height: 1.5rem;
     }
 
 
     .x-btn {
+        display: block;
         background-color: transparent;
         border: none;
         font-size: 2rem;
