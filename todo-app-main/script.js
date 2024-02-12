@@ -40,5 +40,24 @@ addBtnEl.addEventListener("click", function() {
         // Clear input field
         inputEl.value = "";
     }
+});
+        // Selects all "default" buttons
+        const deleteButtons = document.querySelectorAll(".x-btn"); 
+        deleteButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                const listItemContainer = button.parentNode;
+                listItemContainer.remove();
+            })
+        })
 })
+
+// Select tasks section and add scroll function
+const tasksSection = document.querySelector(".tasks-section");
+tasksSection.addEventListener("scroll", function() {
+
+    if  (tasksSection.scrollHeight <= tasksSection.scrollTop + tasksSection.clientHeight) {
+        tasksSection.classList.add("scrollable");
+    } else {
+        tasksSection.classList.remove("scrollable");
+    }
 })

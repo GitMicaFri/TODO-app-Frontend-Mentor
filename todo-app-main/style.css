@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
 
 
 
@@ -47,7 +46,6 @@
 
     .main-container {
         background-color: F9F9F9;
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -55,13 +53,31 @@
     }
 
     .tasks-section {
+        height: 70vh;
         border: 1px solid black;
         border-radius: 6px;
         padding: 2rem;
         row-gap: 1rem;
         margin-top: -2.8rem;
-        overflow-y: hidden;
+        overflow-y: auto;
         background-color: transparent;
+    }
+
+    .tasks-section::-webkit-scrollbar {
+        width: 12px; /* Set the width of the scrollbar */
+    }
+    
+    .tasks-section::-webkit-scrollbar-thumb {
+        background-color: rgba(86, 50, 95, 0.2); /* Set the color of the scrollbar thumb */
+        border-radius: 10px; /* Set the border radius of the scrollbar thumb */
+    }
+    
+    .tasks-section::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.4); /* Set the color of the scrollbar thumb on hover */
+    }
+
+    .scrollable {
+        overflow-y: auto;
     }
 
     .input-field {
@@ -74,51 +90,56 @@
         background-color: rgb(215, 184, 239);
         border-radius: 5px;
         border: none;
-        height:3rem;
+        height:2rem;
         width: 5rem;
         cursor: pointer;
+        margin-left: 1rem;
     }
 
     .add-btn:hover {
         background-color: rgb(229, 89, 229);
     }
 
+    .task-container {
+        display: flex;
+        justify-content: center;
+    }
+
     .tasks {
         margin-top: 3rem;
-        display: grid;
-        grid-template-areas: "task btn"
-                              "task btn"
-                              "task btn";
-        gap: 1rem;
+        display: flex;
+       flex-direction: column;
+       
+        gap: 0.2rem;
        margin-bottom: 3rem;
        list-style:circle;
        font-size: 1.5rem;
        letter-spacing: 0.4ch;
     }
 
+    .input-and-add-btn {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
     .input-li-el {
         list-style: none;
     }
+
     .input-field {
         word-wrap:break-word;
     }
 
-    .task-container {
-        display: block;
-    }
-
     .task {
-        display: inline-block;
-        border: 1px solid blue;
         height: 1.5rem;
     }
-
 
     .x-btn {
         display: block;
         background-color: transparent;
         border: none;
         font-size: 2rem;
+        margin-left: 1rem;
 
     }
 
@@ -134,4 +155,11 @@
         height: 5%;
         margin-top: 2rem;
         background-color: rgb(248, 224, 248);
+    }
+    .attribution { 
+        font-size: 11px; text-align: center; 
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
     }
